@@ -11,7 +11,6 @@ import java.util.Vector;
 
 import org.junit.jupiter.api.Test;
 
-import com.fbergeron.card.Card;
 import com.fbergeron.card.ClassicCard;
 import com.fbergeron.card.Stack;
 import com.fbergeron.card.Suit;
@@ -247,7 +246,7 @@ public class CardTest {
 	public void testStackGetCards() {
 
 		Stack s = new Stack();
-		Vector cards = new Vector();
+		Vector<ClassicCard> cards = new Vector<ClassicCard>();
 		ClassicCard a = new ClassicCard(Value.V_1, Suit.HEART);
 		s.push(a);
 		cards.addElement(a);
